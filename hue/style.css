@@ -51,6 +51,7 @@ body {
 #c25 { background-color: #130012; } /* 黒色 */
 
 .j {
+	font-family: Meiryo, sans-serif;
 	grid-row: 1 / 2;
 	grid-column: 2 / 3;
 	padding-top: 5px;
