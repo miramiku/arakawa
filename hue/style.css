@@ -1,5 +1,6 @@
 body {
 	width: 480px;
+	font-size: 32px;
 }
 
 .line {
@@ -78,4 +79,25 @@ body {
 	grid-row: 2 / 3;
 	grid-column: 2 / 3;
 	font-size: 16px;
+}
+
+.unique {
+	color: #e6002f;
+}
+
+h2, h3 {
+	font-size: 32px;
+	margin-block-start: 80px;
+	margin-block-end: 10px;
+}
+
+ol {
+	margin-top: 0;
+	margin-left: 20px;
+}
+
+.ref-note {
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
