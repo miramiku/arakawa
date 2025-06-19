@@ -1,6 +1,10 @@
 body {
 	width: 480px;
+}
+
+article {
 	font-size: 32px;
+	font-family: Meiryo, sans-serif;
 }
 
 .line {
@@ -13,7 +17,7 @@ body {
 .color {
 	display: block;
 	margin: 5px;
-	border-radius: 4px;
+	border-radius: 8px;
 	padding: 5px;
 	width: 50px;
 	height: 50px;
@@ -52,7 +56,6 @@ body {
 #c25 { background-color: #130012; } /* 黒色 */
 
 .j {
-	font-family: Meiryo, sans-serif;
 	grid-row: 1 / 2;
 	grid-column: 2 / 3;
 	padding-top: 5px;
