@@ -10,50 +10,49 @@ article {
 .line {
 	display: grid;
 	grid-template-rows: 50px 20px;
-	grid-template-columns: 90px 1fr;
-	margin-bottom: 15px;
+	grid-template-columns: 52px 1fr;
+	margin-bottom: 30px;
 }
 
-.color {
+.border {
+	border: 1px solid #afafb0;
+}
+
+.gradient {
 	display: block;
+	border-radius: 4px;
 	margin: 5px;
-	border-radius: 8px;
-	padding: 5px;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 70px;
 	grid-row: 1 / 3;
 	grid-column: 1 / 2;
 }
 
-.color.border {
-	border: 1px solid #afafb0;
-}
-
-#c01 { background-color: #e6002f; } /* 赤色 */
-#c02 { background-color: #ea609e; } /* 赤紫 */
-#c03 { background-color: #9f4500; } /* 赤褐色 */
-#c04 { background-color: #f08300; } /* 橙色 */
-#c05 { background-color: #8d5025; } /* 茶色 */
-#c06 { background-color: #664032; } /* 茶褐色 */
-#c07 { background-color: #ffd900; } /* 黄色 */
-#c08 { background-color: #afd147; } /* 黄緑色 */
-#c09 { background-color: #726837; } /* 黄褐色 */
-#c10 { background-color: #3eb370; } /* 緑色 */
-#c11 { background-color: #9d973b; } /* 緑褐色 */
-#c12 { background-color: #0095d9; } /* 青色 */
-#c13 { background-color: #00afcc; } /* 青緑色 */
-#c14 { background-color: #51318f; } /* 青紫色 */
-#c15 { background-color: #8e4898; } /* 紫色 */
-#c16 { background-color: #813b00; } /* 褐色 */
-#c17 { background-color: #fffffe; } /* 白色 */
-#c18 { background-color: #f8f5e3; } /* 黄白色 */
-#c19 { background-color: #edd29b; } /* 白褐色 */
-#c20 { background-color: #767676; } /* 灰色 */
-#c21 { background-color: #996c4a; } /* 灰茶色 */
-#c22 { background-color: #9e9169; } /* 灰黄色 */
-#c23 { background-color: #698966; } /* 灰緑色 */
-#c24 { background-color: #6b848d; } /* 灰青色 */
-#c25 { background-color: #130012; } /* 黒色 */
+.c01 .gradient { background: linear-gradient( to bottom right, #e6002f 10%, transparent) } /* 赤色 */
+.c02 .gradient { background: linear-gradient( to bottom right, #ea609e 10%, transparent) } /* 赤紫 */
+.c03 .gradient { background: linear-gradient( to bottom right, #9f4500 10%, transparent) } /* 赤褐色 */
+.c04 .gradient { background: linear-gradient( to bottom right, #f08300 10%, transparent) } /* 橙色 */
+.c05 .gradient { background: linear-gradient( to bottom right, #8d5025 10%, transparent) } /* 茶色 */
+.c06 .gradient { background: linear-gradient( to bottom right, #664032 10%, transparent) } /* 茶褐色 */
+.c07 .gradient { background: linear-gradient( to bottom right, #ffd900 10%, transparent) } /* 黄色 */
+.c08 .gradient { background: linear-gradient( to bottom right, #afd147 10%, transparent) } /* 黄緑色 */
+.c09 .gradient { background: linear-gradient( to bottom right, #726837 10%, transparent) } /* 黄褐色 */
+.c10 .gradient { background: linear-gradient( to bottom right, #3eb370 10%, transparent) } /* 緑色 */
+.c11 .gradient { background: linear-gradient( to bottom right, #9d973b 10%, transparent) } /* 緑褐色 */
+.c12 .gradient { background: linear-gradient( to bottom right, #0095d9 10%, transparent) } /* 青色 */
+.c13 .gradient { background: linear-gradient( to bottom right, #00afcc 10%, transparent) } /* 青緑色 */
+.c14 .gradient { background: linear-gradient( to bottom right, #51318f 10%, transparent) } /* 青紫色 */
+.c15 .gradient { background: linear-gradient( to bottom right, #8e4898 10%, transparent) } /* 紫色 */
+.c16 .gradient { background: linear-gradient( to bottom right, #813b00 10%, transparent) } /* 褐色 */
+.c17 .gradient { background: linear-gradient( to bottom right, #fffffe 10%, transparent) } /* 白色 */
+.c18 .gradient { background: linear-gradient( to bottom right, #f8f5e3 10%, transparent) } /* 黄白色 */
+.c19 .gradient { background: linear-gradient( to bottom right, #edd29b 10%, transparent) } /* 白褐色 */
+.c20 .gradient { background: linear-gradient( to bottom right, #767676 10%, transparent) } /* 灰色 */
+.c21 .gradient { background: linear-gradient( to bottom right, #996c4a 10%, transparent) } /* 灰茶色 */
+.c22 .gradient { background: linear-gradient( to bottom right, #9e9169 10%, transparent) } /* 灰黄色 */
+.c23 .gradient { background: linear-gradient( to bottom right, #698966 10%, transparent) } /* 灰緑色 */
+.c24 .gradient { background: linear-gradient( to bottom right, #6b848d 10%, transparent) } /* 灰青色 */
+.c25 .gradient { background: linear-gradient( to bottom right, #130012 10%, transparent) } /* 黒色 */
 
 .j {
 	grid-row: 1 / 2;
@@ -61,21 +60,11 @@ article {
 	padding-top: 5px;
 }
 
-.name {
-	font-size: 32px;
-}
+.name {	font-size: 32px;}
 
-.ruby {
-	font-size: 16px;
-}
-
-.ruby::before {
-	content: "(";
-}
-
-.ruby::after {
-	content: "）";
-}
+.ruby         { font-size: 16px; }
+.ruby::before { content: "(";}
+.ruby::after  {	content: "）";}
 
 .e {
 	font-family: Candara, Meiryo, sans-serif;
